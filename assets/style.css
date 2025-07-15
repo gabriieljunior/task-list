@@ -1,0 +1,125 @@
+body {
+    background: #f4f6fb;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    max-width: 800px;
+    width: 100%;
+    margin: 60px auto 0 auto;
+    padding: 32px 24px;
+    box-sizing: border-box;
+    border: #5f6267 3px solid;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(79, 140, 255, 0.08);
+}
+
+.input-tarefa {
+    width: 100%;
+    padding: 0 12px;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid #b6c6e3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    background: #f7faff;
+    color: #222;
+    transition: border 0.2s;
+}
+.input-tarefa:focus {
+    border: 1.5px solid #000000;
+    outline: none;
+}
+
+.btn-tarefa{
+    display: block;
+    margin: 10px auto 16px auto;
+    width: 100%;
+    max-width: 220px;
+    height: 38px;
+    border-radius: 6px;
+    color: #fff;
+    background: #2e2f31;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+}
+.btn-tarefa:hover {
+    background: #606369;
+    color: #e3eaff;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #030303;
+    letter-spacing: 1px;
+}
+
+.apagar{
+    margin-left: 10px;
+    color: #fff;
+    background: #ff4f4f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 2px 12px;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+}
+.apagar:hover {
+    background: #d90429;
+}
+
+li{
+    margin: 0 0 10px 0;
+    font-family: inherit;
+    background: #f7faff;
+    border-radius: 6px;
+    padding: 10px 12px;
+    box-shadow: 0 1px 4px rgba(79, 140, 255, 0.04);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #222;
+}
+
+.tarefas{
+    margin-top: 40px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(8, auto);
+    gap: 10px 30px;
+    align-items: start;
+    padding: 0;
+    list-style: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 12px 4px;
+        margin: 24px 2px 0 2px;
+    }
+    .btn-tarefa {
+        max-width: 100%;
+        height: 36px;
+    }
+    .tarefas {
+        gap: 8px 8px;
+    }
+    li {
+        font-size: 0.98rem;
+        padding: 8px 6px;
+    }
+}
